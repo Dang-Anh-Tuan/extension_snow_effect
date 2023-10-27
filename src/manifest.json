@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Color picker demo",
-  "description": "Choose color from website",
+  "name": "Snow effect",
+  "description": "Very cold",
   "version": "1.0.1",
   "permissions": [
     "storage",

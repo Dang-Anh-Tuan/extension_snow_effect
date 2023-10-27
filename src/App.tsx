@@ -2,6 +2,7 @@ import './App.css'
 import { useState, useEffect, ChangeEvent } from 'react'
 import { getFromStorage, setInStorage } from './utils/extension'
 import { KEY } from './constant/storage'
+import { sendMessage } from './utils/communicate'
 
 function App() {
   const [onMode, setOnMode] = useState<boolean | undefined>(false)
@@ -19,6 +20,7 @@ function App() {
     const value = e.target.checked
     await setInStorage(KEY.MODE, value)
     setOnMode(value)
+    sendMessage('CHANGE_MODE_SNOW', value)
   }
 
   return (
