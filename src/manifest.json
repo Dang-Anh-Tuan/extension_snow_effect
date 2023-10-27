@@ -4,7 +4,8 @@
   "description": "Choose color from website",
   "version": "1.0.1",
   "permissions": [
-    "storage"
+    "storage",
+    "activeTab"
   ],
   "icons": {
     "48": "logo-picker.png"
@@ -16,5 +17,15 @@
       "48": "logo-picker.png",
       "128": "logo-picker.png"
     }
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
 }

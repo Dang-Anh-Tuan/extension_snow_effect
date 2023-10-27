@@ -1,0 +1,1 @@
+console.log('Inject JS to origin page')
