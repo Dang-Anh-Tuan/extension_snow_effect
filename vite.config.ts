@@ -37,7 +37,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        content: path.resolve(__dirname, './src/extension/content.ts')
+        content: path.resolve(__dirname, './src/extension/content.ts'),
+        background: path.resolve(__dirname, './src/service/background.ts'),
       },
       output: {
         entryFileNames: resolveEntryFileName
